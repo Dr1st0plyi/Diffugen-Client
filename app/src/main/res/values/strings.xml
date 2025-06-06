@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MyDiffuGenApp</string>
+
+
+    <string name="connect_title">Подключение к серверу</string>
+    <string name="hint_server_url">Введите URL сервера</string>
+    <string name="button_connect">Подключиться</string>
+    <string name="error_connection_failed">Ошибка подключения</string>
+
+    <string name="content_desc_generated_image">Сгенерированная картинка</string>
+    <string name="label_parameters">Параметры: %1$s</string>
+
+    <string name="gallery_empty"> Галерея пуста</string>
+    <string name="check_health">Проверить сервер</string>
+    <string name="system_info">Информация о сервере</string>
+    <string name="output">Вывод</string>
+    <string name="go_to_generate">Генерация</string>
+    <string name="models_list">Список моделей</string>
+    <string name="go_to_gallery">Галерея</string>
+    <string name="model_category">Категория модели</string>
+    <string name="submodel">Модмодель</string>
+    <string name="default_parameters">Параметры по умолчанию</string>
+
+    <string name="generate_title">Генерация изображения</string>
+    <string name="hint_prompt">Введите описание картинки</string>
+    <string name="hint_width">Ширина (64-1024)</string>
+    <string name="hint_height">Высота (64-1024)</string>
+    <string name="button_generate">Сгенерировать</string>
+    <string name="hint_seed">Seed</string>
+    <string name="hint_config_scale">Cfg Scale</string>
+    <string name="hint_steps">Steps</string>
+    <string name="sampling_method">Sampling method</string>
+    <string name="select_model">Выберите модель</string>
+
+
+</resources>
