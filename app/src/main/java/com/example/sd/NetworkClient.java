@@ -26,7 +26,6 @@ public class NetworkClient {
         }
         return instance;
     }
-
     public void setBaseUrl(String url) {
         prefs.edit().putString(KEY_BASE_URL, url).apply();
     }
@@ -34,14 +33,12 @@ public class NetworkClient {
     public String getBaseUrl() {
         return prefs.getString(KEY_BASE_URL, "");
     }
-
     private String makeUrl(String path) {
         String base = getBaseUrl();
         if (!base.endsWith("/")) base += "/";
         if (path.startsWith("/")) path = path.substring(1);
         return base + path;
     }
-
     // GET запрос, callback в UI-потоке не реализован (вы сами должны вызывающий код запускать в другом потоке)
     public void doGet(String endpoint, Callback callback) {
         String url = makeUrl(endpoint);
@@ -51,7 +48,6 @@ public class NetworkClient {
                 .build();
         client.newCall(request).enqueue(callback);
     }
-
     // POST с JSON-телом
     public void doPostJson(String endpoint, String jsonBody, Callback callback) {
         Log.d("REQUEST_JSON", "POST " + makeUrl(endpoint) + "  BODY:\n" + jsonBody);
